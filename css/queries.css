@@ -1,0 +1,748 @@
+
+/*
+
+we will em instead of rem because in many different browser they cannot catch rem properly //////////////////
+
+(rem and em do NOT depend on html font-size in media queries! Instead) 
+
+~~~~~~~~~~  */
+
+/* 
+
+
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+
+/*-------------- START--------------------  */
+
+
+
+
+
+/* laptop screen  */
+@media only screen and (min-width:1200px) and  (max-width:1440px)
+{
+            .container
+            {
+            width: 1140px;
+            }   
+             
+            .section-header
+            {
+            width:1140px;  
+
+            }
+            .feature-img-box img {
+            height: 21px;
+            }
+            .work-flow-box
+            {
+            padding: 32px 0;
+            }
+            .heading-primary {
+            font-size: 43px;
+            }
+            .deliver-img img {
+            margin-right: -28px;
+            }
+            .feature-description {
+            font-size: 13px;
+            }
+
+            .feature-title {
+            font-size: 17px;
+            }
+            .plan-price {
+            font-size: 47px;
+            }
+            .pricing-box {
+            width: 86%;
+            }
+            .diet-meal-box {
+            box-shadow:  0 5rem 1.8rem rgb(0 0 0 / 75%);
+            width: 108%;
+            }
+            .client-text {
+            font-size: 16px;
+            }
+            .cta-form label {
+              font-size: 11px;
+              margin-top: 20px;
+            }
+        
+           
+}
+
+/* Ipad or tablet screen  */
+@media only screen and (min-width:768px) and  (max-width:1199px)
+{
+      /* Mobiel Menui  */
+      header nav {
+      display: none;
+      }
+
+      #hamburger-icon {
+      display: block;
+      }
+      /* ############ */
+
+
+      .container
+       {
+        width: 96%;
+       }
+      
+   
+       .logo {
+        height: 15px;
+        align-items: center;
+      }
+       .hero-img {
+        width: 100%;
+      }
+      .main-nav-link:link, .main-nav-link:visited {
+        font-size: 12px;
+      }
+      .btn:link,
+      .btn-full:link, 
+      .btn-outline:link
+       {
+      font-size: 15px!important;
+      padding: 12px 30px;
+      }
+     .hero-grid 
+     {
+      grid-template-columns: 1fr;
+     }
+     .hero-left .heading-primary {
+      font-size: 45px;
+     }
+     .hero-left .hero-description {
+      width: 59%;
+      font-size: 18px;
+    }
+    
+     .work-flow-number {
+      font-size: 54px;
+     }
+     .small-description {
+      font-size: 13px;
+     }
+
+     /* Feature Logo  */
+     .feature-img-box img {
+      height: 16px;
+      margin-right: 28px;
+    }
+     /* Meal  */
+     .meal-box
+     {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     }
+     .meal-box.container
+     {
+      grid-template-columns: 1fr;
+      
+     }
+     .diet-meal-box 
+     {
+      width: 47%;
+     }
+     .meal-img {
+      height: auto;
+      max-width: 100%;
+    }
+
+     /* Gallery  */
+    .testimonial-grid.grid-2
+     {
+      grid-template-columns: 1fr;
+     }
+
+     /* Price plan  */
+     .price-plan
+     {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     }
+     .price-plan.grid-2
+     {
+      grid-template-columns: 1fr;
+     }
+     
+     .pricing-box {
+      width: 61%;
+    }
+     .starer-plan {
+      justify-self: start;
+     }
+     .features-box.grid-4
+     {
+      grid-template-columns: repeat(2,1fr);
+     }
+     .features-box.grid {
+      row-gap: 26px;
+    }
+   
+    .client-text {
+      font-size: 14px;
+      width: 80%;
+    }
+    /* CTA  */
+    .cta-action .heading-secondary {
+      font-size: 24px;
+    }
+
+    .cta-text {
+      font-size: 14px;
+    }
+    .cta-form input, .cta-form select {
+     
+      padding: 4px 10px;
+      font-size:13px;
+    }
+    .cta .btn {
+   
+      font-size: 14px;
+      padding:5px 10px;
+    }
+    .cta-form label {
+    
+      font-size: 11px;
+    }
+    .cta-form label {
+      font-size: 11px;
+      margin-top: 20px;
+    }
+   
+    /* Footer  */
+    .footer .grid {
+   
+      column-gap: 10px;
+      row-gap: 58px;
+    }
+    .grid-footer {
+      grid-template-columns: 2fr 1fr;
+    }
+    .copyright-sec {
+    
+      margin-top: auto;
+    }
+}
+
+
+/* Mobile screen  */
+
+@media only screen and (min-width:500px) and  (max-width:767px)
+{      
+ /* Mobiel Menui  */
+ header nav {
+  display: none;
+}
+
+#hamburger-icon {
+  display: block;
+}
+/* ############ */
+
+      .container
+      {
+      width: 90%;
+      }
+      .logo {
+        height: 15px;
+      }
+     
+      .deliver-text {
+        font-size: 12px
+      }
+     
+      .deliver-img img {
+        margin-right: -18px!important;
+        height: 30px;
+        width: 30px;
+      }
+      .feature-img-box img {
+        height: 10px;
+        margin-right: 18px;
+      }
+      .small-description {
+        font-size: 12px;
+      }
+
+        /* Hero ################# */
+        .hero-img {
+          width: 100%;
+        }
+       .hero-grid 
+       {
+        grid-template-columns: 1fr;
+       }
+        .hero-left .heading-primary {
+          font-size: 32px;
+        }
+     
+      
+       .hero-left .hero-description {
+        width: 95%;
+        font-size: 15px;
+       }
+       .deliver-img img {
+        margin-right: -29px;
+       }
+      
+      
+        .btn:link,
+        .btn-full:link, 
+        .btn-outline:link
+         {
+        font-size: 14px!important;
+        padding: 10px 19px;
+        }
+/* Work flow  ##################################*/
+.work-flow-number {
+  font-size: 48px;
+  }
+  .work-flow-box
+  {
+  grid-template-columns:1fr;
+  }
+  .work-flow-box:nth-child(2) .workflow-img-box
+  {
+    order: 2;
+  }
+  .workflow-img-box img {
+  
+  padding-top: 40px;
+  }
+  .work-flow-text .hedaing-tertiary 
+  {
+  font-size: 17px;
+  }
+  
+ 
+
+    /* Meal  */
+    .meal-box
+    {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    }
+  
+    .meal-box.container
+    {
+     grid-template-columns: 1fr;
+     
+    }
+    .diet-meal-box 
+    {
+      width: 100%;
+    }
+    .meal-tag {
+      padding: 2px 10px;
+      border-radius: 100px;
+      font-size: 6px;
+    }
+   .meal-img {
+    height: auto;
+    max-width: 100%;
+  }
+  .meal-title {
+    font-size: 11px;
+  }
+  .meal-links ul li {
+    font-size: 10px;
+  }
+  .list-box li 
+  {
+    font-size: 12px;
+  }
+  /* Gallery  */
+  .testimonial-grid.grid-2
+     {
+      grid-template-columns: 1fr;
+     }
+     .client-text {
+      font-size: 11px;
+      width: 74%;
+    }
+    .clients-review
+    {
+      grid-template-columns: 1fr;
+    } 
+
+     /* Price plan  */
+
+
+     .heading-secondary {
+      font-size: 22px;
+     }
+     .price-plan
+     {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     }
+     .price-plan.grid-2
+     {
+      grid-template-columns: 1fr;
+     }
+     .pricing-box {
+      width: 120%;
+    }
+     .starer-plan {
+      justify-self: start;
+     }
+     .plan-details 
+     {
+      font-size: 13px;
+      width: 100%;
+     }
+     .feature-description {
+      font-size: 13px;
+    }
+     .features-box.grid-4
+     {
+      grid-template-columns: 1fr;
+     }
+  
+     .features-box.grid {
+      row-gap: 26px;
+    }
+    .client-text {
+      font-size: 14px;
+    }
+    /* CTA  */
+    .cta-action {
+      padding: 32px;
+    }
+    .cta {
+   
+      grid-template-columns: 1fr;
+    }
+    .cta-action .heading-secondary {
+      font-size: 15px;
+    }
+
+    .cta-text {
+      font-size: 11px;
+    }
+    .cta-form input, .cta-form select {
+     
+      padding: 4px 10px;
+      font-size:11px;
+      width: 100%;
+    }
+    .cta-form label {
+      font-size: 13px;
+      padding-top: 20px;
+    }
+    .cta .btn {
+   
+      font-size: 11px;
+      padding:5px 10px;
+    }
+    
+  
+  
+    /* Footer  */
+     /* Footer  */
+     .footer .grid {
+   
+      column-gap: 34px;
+      row-gap: 65px;
+    }
+    .grid-footer {
+      grid-template-columns: 2fr 1fr;
+    }
+    .copyright-sec {
+    
+      margin-top: auto;
+    }
+}
+
+
+/* Extra small Mobile screen  */
+@media only screen and (min-width:200px) and  (max-width:499px)
+{
+  /* Mobiel Menui  */
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+  /* ############ */
+  .container
+  {
+  width: 100%;
+  }
+  .logo {
+    height: 15px;
+  }
+  .heading-secondary {
+    font-size: 17px!important;
+  }
+  .feature-img-box img {
+    height: 10px;
+    margin-right: 14px;
+  }
+  .small-description {
+    font-size: 12px;
+  }
+
+    /* Hero ################# */
+    #section-hero {
+      padding: 158px 0;
+      background-color: #fdf2e9;
+    }
+    .hero-left .heading-primary {
+      font-size: 20px!important;
+    }
+    .hero-left .hero-description {
+      width: 95%;
+      font-size: 9px;
+      padding-bottom: 20px;
+    }
+    .hero-img {
+      width: 100%;
+    }
+   .hero-grid 
+   {
+    grid-template-columns: 1fr;
+   }
+ 
+  
+/* user deliver  */
+.deliver-user
+{
+  grid-template-columns: 1fr;
+}
+.deliver-text {
+  font-size: 10px;
+ 
+  /* margin-left: 28px; */
+}
+  .deliver-user {
+    margin-top: 34px;
+  }
+  .deliver-img img {
+    margin-right: -19px!important;
+    height: 21px;
+    width: 21px;
+  }
+ 
+.btn:link,
+.btn-full:link, 
+.btn-outline:link
+{
+font-size: 10px!important;
+padding: 5px 12px;
+}
+/* Feature logo ################## */
+.feature-img-box img {
+  height: 10px;
+  margin-right: 8px;
+}
+/* Work flow  ##################################*/
+#work-flow {
+  padding: 0;
+}
+.work-flow-number {
+font-size: 48px;
+}
+.work-flow-box
+{
+grid-template-columns:1fr;
+}
+.work-flow-box:nth-child(2) .workflow-img-box
+{
+order: 2;
+}
+.workflow-img-box img {
+
+padding-top: 40px;
+}
+.work-flow-text .hedaing-tertiary 
+{
+font-size: 17px;
+}
+
+
+
+/* Meal  */
+.meal-box
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.meal-box.container
+{
+ grid-template-columns: 1fr;
+ 
+}
+.diet-meal-box 
+{
+  width: 100%;
+}
+.meal-tag {
+  padding: 2px 10px;
+  border-radius: 100px;
+  font-size: 6px;
+}
+.meal-img {
+height: auto;
+max-width: 100%;
+}
+.meal-title {
+font-size: 11px;
+}
+.meal-links ul li {
+font-size: 10px;
+}
+.list-box li 
+{
+  font-size: 12px;
+}
+/* Gallery  */
+.testimonial-grid.grid-2
+ {
+  grid-template-columns: 1fr;
+ }
+ .client-text {
+  font-size: 11px;
+  width: 74%;
+}
+.clients-review
+{
+  grid-template-columns: 1fr;
+} 
+
+ /* Price plan  */
+
+
+ .heading-secondary {
+  font-size: 22px;
+ }
+ .price-plan
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .price-plan.grid-2
+ {
+  grid-template-columns: 1fr;
+ }
+ .pricing-box {
+  width: 120%;
+}
+.complete-plan::after
+{
+    right: -28%;
+    font-size: 11px;
+}
+.price-list li 
+{
+  font-size:12px;
+}
+.plan-price {
+  font-size: 48px;
+}
+ .starer-plan {
+  justify-self: start;
+ }
+ .plan-details 
+ {
+  font-size: 12px;
+  width: 97%;
+ }
+ .feature-description {
+  font-size: 13px;
+}
+ .features-box.grid-4
+ {
+  grid-template-columns: 1fr;
+ }
+
+ .features-box.grid {
+  row-gap: 26px;
+}
+.client-text {
+  font-size: 14px;
+}
+/* CTA  */
+.cta-action {
+  padding: 32px;
+}
+.cta {
+
+  grid-template-columns: 1fr;
+}
+.cta-action .heading-secondary {
+  font-size: 24px!important;
+}
+
+.cta-text {
+  font-size: 11px;
+}
+.cta-form input, .cta-form select {
+ 
+  padding: 4px 10px;
+  font-size:11px;
+  width: 100%;
+}
+.cta-form {
+  column-gap: 12px;
+}
+.cta .btn {
+
+  font-size: 10px;
+  padding:5px 10px;
+}
+
+
+.cta-form label {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+#cta-section .container {
+  width: 107%!important;
+}
+/* Footer  */
+ /* Footer  */
+ .footer .grid {
+
+  column-gap: 34px;
+  row-gap: 65px;
+}
+.grid-footer {
+  grid-template-columns:  1fr;
+}
+.copyright-sec {
+
+  margin-top: auto;
+}
+
+
+}
+
